@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaii Nathan — Crypto Portfolio</title>  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">  <style>
+    :root{
+      --bg:#05070d;
+      --card:#0b0f1a;
+      --border:#121826;
+      --green:#00ff9c;
+      --red:#ff3b5c;
+      --text:#e6edf3;
+      --muted:#7d8590;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:radial-gradient(circle at top,#0b1220,#05070d);
+      color:var(--text);
+    }
+
+    .container{
+      max-width:900px;
+      margin:auto;
+      padding:0 20px;
+    }
+
+    header{
+      border-bottom:1px solid var(--border);
+    }
+
+    .nav{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:14px 0;
+    }
+
+    .nav h1{font-size:16px}
+
+    .nav a{
+      margin-left:16px;
+      color:var(--muted);
+      text-decoration:none;
+      font-size:13px;
+    }
+
+    .nav a:hover{color:var(--green)}
+
+    .hero{
+      padding:70px 0 40px;
+      text-align:center;
+    }
+
+    .hero h2{font-size:34px;margin-bottom:10px}
+    .hero span{color:var(--green)}
+
+    .hero p{color:var(--muted);max-width:450px;margin:auto}
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+      margin-top:25px;
+    }
+
+    .stat{
+      background:var(--card);
+      border:1px solid var(--border);
+      padding:12px;
+      border-radius:8px;
+      font-family:'JetBrains Mono';
+      text-align:center;
+      font-size:12px;
+    }
+
+    .section{padding:45px 0}
+
+    .section h3{margin-bottom:18px;font-size:16px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:14px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:16px;
+      transition:.2s;
+    }
+
+    .card:hover{border-color:var(--green)}
+
+    .card i{margin-bottom:6px}
+
+    .green{color:var(--green)}
+    .red{color:var(--red)}
+
+    .card h4{font-size:13px;margin-bottom:4px}
+    .card p{font-size:11px;color:var(--muted)}
+
+    /* PROFILE */
+    .profile{
+      display:grid;
+      grid-template-columns:90px 1fr;
+      gap:16px;
+      align-items:center;
+    }
+
+    .avatar{
+      width:90px;height:90px;
+      border-radius:50%;
+      background:url('https://cdn.ikyyzyyrestapi.my.id/api/upload/8ae62b85220dbf91c888ae5f3ad306ca.jpg/69ecf200b373?preview=true') center/cover;
+      border:2px solid var(--border);
+    }
+
+    .highlight{
+      margin-top:10px;
+      padding:10px;
+      border:1px solid var(--border);
+      border-radius:8px;
+      background:var(--card);
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    /* CONTACT BUTTONS */
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:14px;
+    }
+
+    .contact-btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:12px;
+      border-radius:8px;
+      background:var(--card);
+      border:1px solid var(--border);
+      text-decoration:none;
+      color:var(--text);
+      font-size:12px;
+      transition:.2s;
+    }
+
+    .contact-btn:hover{
+      border-color:var(--green);
+      color:var(--green);
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      padding:18px 0;
+      text-align:center;
+      color:var(--muted);
+      font-size:11px;
+    }
+
+  </style></head>
+<body><header>
+  <div class="container nav">
+    <h1><i class="fa-solid fa-chart-candlestick green"></i> Kaii Nathan</h1>
+    <div>
+      <a href="#">Profile</a>
+      <a href="#">Skills</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</header><div class="container"><section class="hero">
+  <h2>Building Profit From <span>Volatility</span></h2>
+  <p>Trading is based on data, discipline, and execution.</p>  <div class="stats">
+    <div class="stat">ROI +128%</div>
+    <div class="stat">Winrate 74%</div>
+    <div class="stat">Trades 1.2k+</div>
+  </div>
+</section><section class="section">
+  <h3>Profile</h3>
+  <div class="profile">
+    <div class="avatar"></div>
+    <div>
+      <p>I am a crypto trader focusing on consistency, risk management, and structured trading systems.</p>
+      <div class="highlight">Long-term growth, disciplined execution, and controlled risk exposure.</div>
+    </div>
+  </div>
+</section><section class="section">
+  <h3>Skills</h3>
+  <div class="grid">
+    <div class="card"><i class="fa-solid fa-chart-line green"></i><h4>Technical Analysis</h4><p>Market structure.</p></div>
+    <div class="card"><i class="fa-brands fa-bitcoin green"></i><h4>Crypto Trading</h4><p>Spot & futures.</p></div>
+    <div class="card"><i class="fa-solid fa-brain red"></i><h4>Psychology</h4><p>Discipline.</p></div>
+    <div class="card"><i class="fa-solid fa-shield green"></i><h4>Risk Management</h4><p>Capital protection.</p></div>
+  </div>
+</section><section class="section">
+  <h3>Portfolio</h3>
+  <div class="grid">
+    <div class="card"><i class="fa-solid fa-arrow-trend-up green"></i><h4>BTC Strategy</h4><p>Trend based.</p></div>
+    <div class="card"><i class="fa-solid fa-bolt red"></i><h4>Scalping</h4><p>Fast trades.</p></div>
+    <div class="card"><i class="fa-solid fa-coins green"></i><h4>Altcoins</h4><p>Momentum.</p></div>
+    <div class="card"><i class="fa-solid fa-layer-group green"></i><h4>Allocation</h4><p>Diversification.</p></div>
+  </div>
+</section><section class="section">
+  <h3>Contact</h3>
+  <div class="contact-grid">
+    <a href="https://instagram.com/kaiieclipse" target="_blank" class="contact-btn">
+      <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+
+    <a href="https://t.me/gabrielkaii" target="_blank" class="contact-btn">
+      <i class="fa-brands fa-telegram"></i> Telegram
+    </a>
+
+    <a href="mailto:kaiieclipse24@gmail.com" class="contact-btn">
+      <i class="fa-solid fa-envelope"></i> Email
+    </a>
+  </div>
+</section></div><footer>
+  © 2026 Kaii Crypto Portfolio | No Risk, No Rich!!
+</footer></body>
+</html>
